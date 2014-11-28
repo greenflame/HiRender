@@ -1,0 +1,9 @@
+C:\Users\Alexandr\Desktop\HiRender\HiRender\bin\Debug\HiRender.exe.config
+C:\Users\Alexandr\Desktop\HiRender\HiRender\bin\Debug\HiRender.exe
+C:\Users\Alexandr\Desktop\HiRender\HiRender\bin\Debug\HiRender.pdb
+C:\Users\Alexandr\Desktop\HiRender\HiRender\obj\Debug\HiRender.csprojResolveAssemblyReference.cache
+C:\Users\Alexandr\Desktop\HiRender\HiRender\obj\Debug\HiRender.Form1.resources
+C:\Users\Alexandr\Desktop\HiRender\HiRender\obj\Debug\HiRender.Properties.Resources.resources
+C:\Users\Alexandr\Desktop\HiRender\HiRender\obj\Debug\HiRender.csproj.GenerateResource.Cache
+C:\Users\Alexandr\Desktop\HiRender\HiRender\obj\Debug\HiRender.exe
+C:\Users\Alexandr\Desktop\HiRender\HiRender\obj\Debug\HiRender.pdb
