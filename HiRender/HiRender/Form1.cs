@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Globalization;
 using System.Windows.Forms;
 
 namespace HiRender
@@ -19,8 +14,8 @@ namespace HiRender
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var render = new TestRender();
-            var bmp = render.Run(richTextBox1);
+            var render = new HRender();
+            Bitmap bmp = render.Visualize();
             pictureBox1.Image = bmp;
             bmp.Save("test.png");
         }

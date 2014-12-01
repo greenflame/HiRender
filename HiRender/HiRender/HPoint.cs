@@ -68,5 +68,13 @@
         {
             return X.ToString() + ' ' + Y + ' ' + Z;
         }
+
+        public void Normalise() //todo ?
+        {
+            double l = this.Length();
+            X /= l;
+            Y /= l;
+            Z /= l;
+        }
     }
 }
