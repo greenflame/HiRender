@@ -16,3 +16,12 @@ C:\Users\Alexandr\Desktop\HiRender\HiRender\HiRender\obj\Debug\HiRender.csprojRe
 C:\Users\Alexandr\Desktop\HiRender\HiRender\HiRender\obj\Debug\HiRender.Form1.resources
 C:\Users\Alexandr\Desktop\HiRender\HiRender\HiRender\obj\Debug\HiRender.Properties.Resources.resources
 C:\Users\Alexandr\Desktop\HiRender\HiRender\HiRender\obj\Debug\HiRender.csproj.GenerateResource.Cache
+D:\GitHub\HiRender\HiRender\HiRender\bin\Debug\HiRender.exe.config
+D:\GitHub\HiRender\HiRender\HiRender\obj\Debug\HiRender.csprojResolveAssemblyReference.cache
+D:\GitHub\HiRender\HiRender\HiRender\obj\Debug\HiRender.Form1.resources
+D:\GitHub\HiRender\HiRender\HiRender\obj\Debug\HiRender.Properties.Resources.resources
+D:\GitHub\HiRender\HiRender\HiRender\obj\Debug\HiRender.csproj.GenerateResource.Cache
+D:\GitHub\HiRender\HiRender\HiRender\bin\Debug\HiRender.exe
+D:\GitHub\HiRender\HiRender\HiRender\bin\Debug\HiRender.pdb
+D:\GitHub\HiRender\HiRender\HiRender\obj\Debug\HiRender.exe
+D:\GitHub\HiRender\HiRender\HiRender\obj\Debug\HiRender.pdb

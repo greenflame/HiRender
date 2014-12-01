@@ -38,5 +38,11 @@ namespace HiRender
         {
             return Shader(render, collider, ray);
         }
+
+
+        public HPoint CollisionNormal(HRay ray)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

@@ -24,5 +24,11 @@ namespace HiRender
         {
             throw new NotImplementedException();
         }
+
+
+        public HPoint CollisionNormal(HRay ray)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

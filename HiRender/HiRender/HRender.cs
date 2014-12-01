@@ -39,7 +39,7 @@ namespace HiRender
             get { return _colliders; }
         }
 
-        public Color TraseRay(HRay ray)
+        public Color TraceRay(HRay ray)
         {
             var collisions = new List<KeyValuePair<HPoint, ICollider>>();
 
@@ -70,7 +70,7 @@ namespace HiRender
                         ViewportHeight/HeightIterations*y - ViewportHeight/2,
                         -ViewportDistance);
 
-                    bmp.SetPixel(x, HeightIterations - y - 1, TraseRay(new HRay(a, b)));
+                    bmp.SetPixel(x, HeightIterations - y - 1, TraceRay(new HRay(a, b)));
                 }
 
             return bmp;
