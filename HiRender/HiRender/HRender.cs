@@ -5,45 +5,25 @@ namespace HiRender
 {
     internal class HRender
     {
-        private readonly List<ICollider> _colliders;
-
-        public HRender()
+        public HRender(HScene scene, int widthIterations, int heightIterations)
         {
-            _colliders = new List<ICollider>();
-
-            ViewportWidth = 2;
-            ViewportHeight = 1;
-            ViewportDistance = 0.5;
-
-            WidthIterations = 600;
-            HeightIterations = 300;
-
-            ICollider face = new HFaceCollider(new HPoint(0, 0, -20), new HPoint(20, 0, -20), new HPoint(0, 20, -20),
-                HShaders.SimpleRedShader);
-            ICollider face2 = new HFaceCollider(new HPoint(0, 0, -19), new HPoint(15, 0, -19), new HPoint(0, 15, -21),
-                HShaders.SimpleBlackShader);
-
-            Colliders.Add(face);
-            Colliders.Add(face2);
+            _scene = scene;
+            WidthIterations = widthIterations;
+            HeightIterations = heightIterations;
         }
 
-        public double ViewportWidth { get; set; }
-        public double ViewportHeight { get; set; }
-        public double ViewportDistance { get; set; }
+
+        private HScene _scene;
+        
 
         public int WidthIterations { get; set; }
         public int HeightIterations { get; set; }
-
-        public List<ICollider> Colliders
-        {
-            get { return _colliders; }
-        }
 
         public Color TraceRay(HRay ray)
         {
             var collisions = new List<KeyValuePair<HPoint, ICollider>>();
 
-            foreach (ICollider collider in Colliders)
+            foreach (ICollider collider in _scene.Colliders)
             {
                 HPoint collisionPoint = collider.CollisionPoint(ray);
                 if (collisionPoint != null)
@@ -66,9 +46,9 @@ namespace HiRender
                 {
                     var a = new HPoint(0, 0, 0);
                     var b = new HPoint(
-                        ViewportWidth/WidthIterations*x - ViewportWidth/2,
-                        ViewportHeight/HeightIterations*y - ViewportHeight/2,
-                        -ViewportDistance);
+                        _scene.Camera.ViewportWidth / WidthIterations * x - _scene.Camera.ViewportWidth / 2,
+                        _scene.Camera.ViewportHeight / HeightIterations * y - _scene.Camera.ViewportHeight / 2,
+                        -_scene.Camera.ViewportDistance);
 
                     bmp.SetPixel(x, HeightIterations - y - 1, TraceRay(new HRay(a, b)));
                 }

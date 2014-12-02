@@ -45,7 +45,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HCamera.cs" />
     <Compile Include="HFaceCollider.cs" />
+    <Compile Include="HLight.cs" />
+    <Compile Include="HPointLight.cs" />
     <Compile Include="HRay.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -56,6 +59,7 @@
     <Compile Include="HAccuracy.cs" />
     <Compile Include="HGeometry.cs" />
     <Compile Include="HPoint.cs" />
+    <Compile Include="HScene.cs" />
     <Compile Include="HShaders.cs" />
     <Compile Include="HSphereCollider.cs" />
     <Compile Include="ICollider.cs" />
