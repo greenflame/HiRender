@@ -1,0 +1,5 @@
+C:\Users\Alexandr\Desktop\HiRender\HiRender\HiMath\bin\Debug\HiMath.dll
+C:\Users\Alexandr\Desktop\HiRender\HiRender\HiMath\bin\Debug\HiMath.pdb
+C:\Users\Alexandr\Desktop\HiRender\HiRender\HiMath\obj\Debug\HiMath.csprojResolveAssemblyReference.cache
+C:\Users\Alexandr\Desktop\HiRender\HiRender\HiMath\obj\Debug\HiMath.dll
+C:\Users\Alexandr\Desktop\HiRender\HiRender\HiMath\obj\Debug\HiMath.pdb

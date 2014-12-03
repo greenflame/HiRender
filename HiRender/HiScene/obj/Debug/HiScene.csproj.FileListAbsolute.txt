@@ -1,0 +1,18 @@
+C:\Users\Alexandr\Desktop\HiRender\HiRender\HiScene\obj\Debug\HiScene.csprojResolveAssemblyReference.cache
+C:\Users\Alexandr\Desktop\HiRender\HiRender\HiScene\bin\Debug\HiScene.dll
+C:\Users\Alexandr\Desktop\HiRender\HiRender\HiScene\bin\Debug\HiScene.pdb
+C:\Users\Alexandr\Desktop\HiRender\HiRender\HiScene\bin\Debug\HiMath.dll
+C:\Users\Alexandr\Desktop\HiRender\HiRender\HiScene\bin\Debug\HiTracer.dll
+C:\Users\Alexandr\Desktop\HiRender\HiRender\HiScene\bin\Debug\HiMath.pdb
+C:\Users\Alexandr\Desktop\HiRender\HiRender\HiScene\bin\Debug\HiTracer.pdb
+C:\Users\Alexandr\Desktop\HiRender\HiRender\HiScene\obj\Debug\HiScene.dll
+C:\Users\Alexandr\Desktop\HiRender\HiRender\HiScene\obj\Debug\HiScene.pdb
+C:\Users\Alexandr\Desktop\HiRender - Copy (2)\HiRender\HiScene\bin\Debug\HiScene.dll
+C:\Users\Alexandr\Desktop\HiRender - Copy (2)\HiRender\HiScene\bin\Debug\HiScene.pdb
+C:\Users\Alexandr\Desktop\HiRender - Copy (2)\HiRender\HiScene\bin\Debug\HiMath.dll
+C:\Users\Alexandr\Desktop\HiRender - Copy (2)\HiRender\HiScene\bin\Debug\HiTracer.dll
+C:\Users\Alexandr\Desktop\HiRender - Copy (2)\HiRender\HiScene\bin\Debug\HiMath.pdb
+C:\Users\Alexandr\Desktop\HiRender - Copy (2)\HiRender\HiScene\bin\Debug\HiTracer.pdb
+C:\Users\Alexandr\Desktop\HiRender - Copy (2)\HiRender\HiScene\obj\Debug\HiScene.csprojResolveAssemblyReference.cache
+C:\Users\Alexandr\Desktop\HiRender - Copy (2)\HiRender\HiScene\obj\Debug\HiScene.dll
+C:\Users\Alexandr\Desktop\HiRender - Copy (2)\HiRender\HiScene\obj\Debug\HiScene.pdb

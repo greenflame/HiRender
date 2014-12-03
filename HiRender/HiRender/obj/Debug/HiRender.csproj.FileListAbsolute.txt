@@ -16,12 +16,24 @@ C:\Users\Alexandr\Desktop\HiRender\HiRender\HiRender\obj\Debug\HiRender.csprojRe
 C:\Users\Alexandr\Desktop\HiRender\HiRender\HiRender\obj\Debug\HiRender.Form1.resources
 C:\Users\Alexandr\Desktop\HiRender\HiRender\HiRender\obj\Debug\HiRender.Properties.Resources.resources
 C:\Users\Alexandr\Desktop\HiRender\HiRender\HiRender\obj\Debug\HiRender.csproj.GenerateResource.Cache
-D:\GitHub\HiRender\HiRender\HiRender\bin\Debug\HiRender.exe.config
-D:\GitHub\HiRender\HiRender\HiRender\obj\Debug\HiRender.csprojResolveAssemblyReference.cache
-D:\GitHub\HiRender\HiRender\HiRender\obj\Debug\HiRender.Form1.resources
-D:\GitHub\HiRender\HiRender\HiRender\obj\Debug\HiRender.Properties.Resources.resources
-D:\GitHub\HiRender\HiRender\HiRender\obj\Debug\HiRender.csproj.GenerateResource.Cache
-D:\GitHub\HiRender\HiRender\HiRender\bin\Debug\HiRender.exe
-D:\GitHub\HiRender\HiRender\HiRender\bin\Debug\HiRender.pdb
-D:\GitHub\HiRender\HiRender\HiRender\obj\Debug\HiRender.exe
-D:\GitHub\HiRender\HiRender\HiRender\obj\Debug\HiRender.pdb
+C:\Users\Alexandr\Desktop\HiRender\HiRender\HiRender\bin\Debug\HiMath.dll
+C:\Users\Alexandr\Desktop\HiRender\HiRender\HiRender\bin\Debug\HiTracer.dll
+C:\Users\Alexandr\Desktop\HiRender\HiRender\HiRender\bin\Debug\HiMath.pdb
+C:\Users\Alexandr\Desktop\HiRender\HiRender\HiRender\bin\Debug\HiTracer.pdb
+C:\Users\Alexandr\Desktop\HiRender\HiRender\HiRender\bin\Debug\HiScene.dll
+C:\Users\Alexandr\Desktop\HiRender\HiRender\HiRender\bin\Debug\HiScene.pdb
+C:\Users\Alexandr\Desktop\HiRender - Copy (2)\HiRender\HiRender\bin\Debug\HiRender.exe.config
+C:\Users\Alexandr\Desktop\HiRender - Copy (2)\HiRender\HiRender\obj\Debug\HiRender.exe
+C:\Users\Alexandr\Desktop\HiRender - Copy (2)\HiRender\HiRender\obj\Debug\HiRender.pdb
+C:\Users\Alexandr\Desktop\HiRender - Copy (2)\HiRender\HiRender\bin\Debug\HiRender.exe
+C:\Users\Alexandr\Desktop\HiRender - Copy (2)\HiRender\HiRender\bin\Debug\HiRender.pdb
+C:\Users\Alexandr\Desktop\HiRender - Copy (2)\HiRender\HiRender\bin\Debug\HiMath.dll
+C:\Users\Alexandr\Desktop\HiRender - Copy (2)\HiRender\HiRender\bin\Debug\HiScene.dll
+C:\Users\Alexandr\Desktop\HiRender - Copy (2)\HiRender\HiRender\bin\Debug\HiTracer.dll
+C:\Users\Alexandr\Desktop\HiRender - Copy (2)\HiRender\HiRender\bin\Debug\HiMath.pdb
+C:\Users\Alexandr\Desktop\HiRender - Copy (2)\HiRender\HiRender\bin\Debug\HiScene.pdb
+C:\Users\Alexandr\Desktop\HiRender - Copy (2)\HiRender\HiRender\bin\Debug\HiTracer.pdb
+C:\Users\Alexandr\Desktop\HiRender - Copy (2)\HiRender\HiRender\obj\Debug\HiRender.csprojResolveAssemblyReference.cache
+C:\Users\Alexandr\Desktop\HiRender - Copy (2)\HiRender\HiRender\obj\Debug\HiRender.Form1.resources
+C:\Users\Alexandr\Desktop\HiRender - Copy (2)\HiRender\HiRender\obj\Debug\HiRender.Properties.Resources.resources
+C:\Users\Alexandr\Desktop\HiRender - Copy (2)\HiRender\HiRender\obj\Debug\HiRender.csproj.GenerateResource.Cache

@@ -1,0 +1,14 @@
+C:\Users\Alexandr\Desktop\HiRender\HiRender\HiTracer\obj\Debug\HiTracer.csprojResolveAssemblyReference.cache
+C:\Users\Alexandr\Desktop\HiRender\HiRender\HiTracer\bin\Debug\HiTracer.dll
+C:\Users\Alexandr\Desktop\HiRender\HiRender\HiTracer\bin\Debug\HiTracer.pdb
+C:\Users\Alexandr\Desktop\HiRender\HiRender\HiTracer\bin\Debug\HiMath.dll
+C:\Users\Alexandr\Desktop\HiRender\HiRender\HiTracer\bin\Debug\HiMath.pdb
+C:\Users\Alexandr\Desktop\HiRender\HiRender\HiTracer\obj\Debug\HiTracer.dll
+C:\Users\Alexandr\Desktop\HiRender\HiRender\HiTracer\obj\Debug\HiTracer.pdb
+C:\Users\Alexandr\Desktop\HiRender - Copy (2)\HiRender\HiTracer\bin\Debug\HiTracer.dll
+C:\Users\Alexandr\Desktop\HiRender - Copy (2)\HiRender\HiTracer\bin\Debug\HiTracer.pdb
+C:\Users\Alexandr\Desktop\HiRender - Copy (2)\HiRender\HiTracer\bin\Debug\HiMath.dll
+C:\Users\Alexandr\Desktop\HiRender - Copy (2)\HiRender\HiTracer\bin\Debug\HiMath.pdb
+C:\Users\Alexandr\Desktop\HiRender - Copy (2)\HiRender\HiTracer\obj\Debug\HiTracer.csprojResolveAssemblyReference.cache
+C:\Users\Alexandr\Desktop\HiRender - Copy (2)\HiRender\HiTracer\obj\Debug\HiTracer.dll
+C:\Users\Alexandr\Desktop\HiRender - Copy (2)\HiRender\HiTracer\obj\Debug\HiTracer.pdb
