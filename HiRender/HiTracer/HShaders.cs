@@ -27,11 +27,20 @@ namespace HiTracer
             return Color.Red;
         }
 
-        public static Color MirrorBlackShader(HRender render, ICollider collider, HRay ray)
+        public static Color MirrorTransparentBlackShader(HRender render, ICollider collider, HRay ray)
         {
-            var ray2 = new HRay(collider.CollisionPoint(ray).Value,
-                HGeometry.ReflectVector(collider.CollisionNormal(ray), ray.Direction));
-            return MixColors(Color.Black, render.TraseRay(ray2), 0.5, 0.5);
+            Color passedColor = render.TraseRay(collider.PassRay(ray));
+            Color reflectedColor = render.TraseRay(collider.ReflectRay(ray));
+            Color c = MixColors(passedColor, reflectedColor, 0.5, 0.5);
+            return MixColors(Color.Black, c, 0.5, 0.5);
+        }
+
+        public static Color MirrorTransparentBlueShader(HRender render, ICollider collider, HRay ray)
+        {
+            Color passedColor = render.TraseRay(collider.PassRay(ray));
+            Color reflectedColor = render.TraseRay(collider.ReflectRay(ray));
+            Color c = MixColors(passedColor, reflectedColor, 0.5, 0.5);
+            return MixColors(Color.Blue, c, 0.5, 0.5);
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Media.Media3D;
 using HiTracer;
 
@@ -8,9 +9,12 @@ namespace HiScene
     {
         private readonly List<ICollider> _colliders;
 
+        public Matrix3D TransformationMatrix;
+
         public HModel()
         {
             _colliders = new List<ICollider>();
+            TransformationMatrix = new Matrix3D();
         }
 
         public List<ICollider> Colliders
@@ -18,12 +22,9 @@ namespace HiScene
             get { return _colliders; }
         }
 
-        public void Transform(Matrix3D matrix)
+        public List<ICollider> ApplyTransform()
         {
-            foreach (ICollider collider in _colliders)
-            {
-                collider.Transform(matrix);
-            }
+            return _colliders.Select(collider => collider.Transform(TransformationMatrix)).ToList();
         }
     }
 }

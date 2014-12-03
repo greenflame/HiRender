@@ -6,17 +6,24 @@ namespace HiTracer
 {
     public class HSphere : ICollider
     {
-        public HSphere(Point3D center, double radius)
+        public HSphere(Point3D center, double radius, HShaders.Shader shader)
         {
             Center = center;
             Radius = radius;
+
+            Shader = shader;
         }
 
         public Point3D Center { get; set; }
         public double Radius { get; set; }
         public HShaders.Shader Shader { get; set; }
 
-        public Point3D? CollisionPoint(HRay ray)
+        public bool DetectCollision(HRay ray)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Point3D CollisionPoint(HRay ray)
         {
             throw new NotImplementedException();
         }
@@ -26,9 +33,19 @@ namespace HiTracer
             throw new NotImplementedException();
         }
 
-        public void Transform(Matrix3D matrix)
+        public HRay PassRay(HRay ray)
         {
-            Center *= matrix;
+            throw new NotImplementedException();
+        }
+
+        public HRay ReflectRay(HRay ray)
+        {
+            throw new NotImplementedException();
+        }
+
+        public ICollider Transform(Matrix3D matrix)
+        {
+            return new HSphere(Center*matrix, Radius, Shader);
         }
     }
 }

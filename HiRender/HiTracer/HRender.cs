@@ -39,9 +39,8 @@ namespace HiTracer
 
             foreach (ICollider collider in Colliders)
             {
-                Point3D? collisionPoint = collider.CollisionPoint(ray);
-                if (collisionPoint != null)
-                    collisions.Add(new KeyValuePair<Point3D, ICollider>(collisionPoint.Value, collider));
+                if (collider.DetectCollision(ray))
+                    collisions.Add(new KeyValuePair<Point3D, ICollider>(collider.CollisionPoint(ray), collider));
             }
 
             collisions.Sort(

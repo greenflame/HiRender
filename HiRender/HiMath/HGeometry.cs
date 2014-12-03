@@ -63,7 +63,8 @@ namespace HiMath
             return HAccuracy.DoubleEqual(s, s1 + s2 + s3);
         }
 
-        public static Point3D? IntersectPlaneLineByEquation(Point3D p0, Point3D p1, Point3D p2, Point3D l0, Point3D l1)
+        public static Point3D IntersectPlaneLineByEquation(Point3D p0, Point3D p1, Point3D p2, Point3D l0, Point3D l1,
+            out bool intersectionExists)
         {
             double a = new Matrix3D(
                 1, p0.Y, p0.Z, 0,
@@ -101,13 +102,17 @@ namespace HiMath
             double y0 = l0.Y;
             double z0 = l0.Z;
 
-            if (HAccuracy.DoubleEqual(a*k + b*l + c*m, 0)) //if no intersection, return null
-                return null;
+            if (HAccuracy.DoubleEqual(a*k + b*l + c*m, 0)) //if no intersection, return
+            {
+                intersectionExists = false;
+                return new Point3D();
+            }
 
             double t = -(d + a*x0 + b*y0 + c*z0)/(a*k + b*l + c*m); //finding t and poin of intersection
 
             var result = new Point3D(t*k + x0, t*l + y0, t*m + z0);
 
+            intersectionExists = true;
             return result;
         }
     }

@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.Remoting;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Media.Media3D;
 using HiTracer;
 
@@ -13,9 +9,12 @@ namespace HiScene
     {
         private readonly List<HModel> _models;
 
+        public Matrix3D TransformationMatrix;
+
         public HScene()
         {
             _models = new List<HModel>();
+            TransformationMatrix = new Matrix3D();
         }
 
         public List<HModel> Models
@@ -23,21 +22,14 @@ namespace HiScene
             get { return _models; }
         }
 
-        public void Transform(Matrix3D matrix)
+        public List<ICollider> ApplyTransform()
         {
+            var res = new List<ICollider>();
             foreach (HModel model in _models)
             {
-                model.Transform(matrix);
+                res.AddRange(model.ApplyTransform());
             }
-        }
-
-        public List<ICollider> ToColliderList()
-        {
-            List<ICollider> res = new List<ICollider>();
-            foreach (HModel model in _models)
-            {
-                res.AddRange(model.Colliders);
-            }
+            res = res.Select(collider => collider.Transform(TransformationMatrix)).ToList();
             return res;
         }
     }
