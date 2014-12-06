@@ -12,6 +12,18 @@ namespace HiTracer
             Radius = radius;
 
             Shader = shader;
+
+            ApplyedTranformation = new Matrix3D();
+        }
+
+        public HSphere(Point3D center, double radius, HShaders.Shader shader, Matrix3D applyedTransformation)
+        {
+            Center = center;
+            Radius = radius;
+
+            Shader = shader;
+
+            ApplyedTranformation = applyedTransformation;
         }
 
         public Point3D Center { get; set; }
@@ -45,7 +57,9 @@ namespace HiTracer
 
         public ICollider Transform(Matrix3D matrix)
         {
-            return new HSphere(Center*matrix, Radius, Shader);
+            return new HSphere(Center * matrix, Radius, Shader, ApplyedTranformation * matrix);
         }
+
+        public Matrix3D ApplyedTranformation { get; private set; }
     }
 }

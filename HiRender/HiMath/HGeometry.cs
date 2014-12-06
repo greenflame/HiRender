@@ -4,6 +4,12 @@ namespace HiMath
 {
     public class HGeometry
     {
+        //public static bool IntersectSphereLine(Point3D l0, Point3D l1, Point3D sphereCenter, double sphereRadius,
+        //    out Point3D result1, out Point3D result2)
+        //{
+            
+        //}
+
         public static bool IsPointOnRayExcludeSource(HRay ray, Point3D p)
         {
             return IsPointOnRayExcludeSource(ray.Source, ray.Direction, p);
@@ -63,8 +69,8 @@ namespace HiMath
             return HAccuracy.DoubleEqual(s, s1 + s2 + s3);
         }
 
-        public static Point3D IntersectPlaneLineByEquation(Point3D p0, Point3D p1, Point3D p2, Point3D l0, Point3D l1,
-            out bool intersectionExists)
+        public static bool IntersectPlaneLineByEquation(Point3D p0, Point3D p1, Point3D p2, Point3D l0, Point3D l1,
+            out Point3D intersectionPoint)
         {
             double a = new Matrix3D(
                 1, p0.Y, p0.Z, 0,
@@ -104,16 +110,16 @@ namespace HiMath
 
             if (HAccuracy.DoubleEqual(a*k + b*l + c*m, 0)) //if no intersection, return
             {
-                intersectionExists = false;
-                return new Point3D();
+                intersectionPoint = new Point3D();
+                return false;
             }
 
             double t = -(d + a*x0 + b*y0 + c*z0)/(a*k + b*l + c*m); //finding t and poin of intersection
 
             var result = new Point3D(t*k + x0, t*l + y0, t*m + z0);
 
-            intersectionExists = true;
-            return result;
+            intersectionPoint = result;
+            return true;
         }
     }
 }

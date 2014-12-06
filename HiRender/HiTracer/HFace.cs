@@ -11,6 +11,18 @@ namespace HiTracer
             B = b;
             C = c;
             Shader = shader;
+
+            ApplyedTranformation = new Matrix3D();
+        }
+
+        public HFace(Point3D a, Point3D b, Point3D c, HShaders.Shader shader, Matrix3D applyedTransforation)
+        {
+            A = a;
+            B = b;
+            C = c;
+            Shader = shader;
+
+            ApplyedTranformation = applyedTransforation;
         }
 
         public Point3D A { get; set; } //triangle coordinates
@@ -20,9 +32,9 @@ namespace HiTracer
 
         public bool DetectCollision(HRay ray)
         {
-            bool intersectionExists;
-            Point3D intersectionPoint = HGeometry.IntersectPlaneLineByEquation(A, B, C, ray.Source,
-                ray.Source + ray.Direction, out intersectionExists);
+            Point3D intersectionPoint;
+            bool intersectionExists = HGeometry.IntersectPlaneLineByEquation(A, B, C, ray.Source,
+                ray.Source + ray.Direction, out intersectionPoint);
 
             return intersectionExists && HGeometry.IsPointOnRayExcludeSource(ray, intersectionPoint) &&
                    HGeometry.IsPointInTriangle(A, B, C, intersectionPoint);
@@ -31,9 +43,9 @@ namespace HiTracer
 
         public Point3D CollisionPoint(HRay ray)
         {
-            bool intersectionExists;
-            Point3D intersectionPoint = HGeometry.IntersectPlaneLineByEquation(A, B, C, ray.Source,
-                ray.Source + ray.Direction, out intersectionExists);
+            Point3D intersectionPoint;
+            HGeometry.IntersectPlaneLineByEquation(A, B, C, ray.Source,
+                ray.Source + ray.Direction, out intersectionPoint);
 
             return intersectionPoint;
         }
@@ -59,8 +71,11 @@ namespace HiTracer
                 A*matrix,
                 B*matrix,
                 C*matrix,
-                Shader
+                Shader,
+                ApplyedTranformation * matrix
                 );
         }
+
+        public Matrix3D ApplyedTranformation { get; private set; }
     }
 }
