@@ -34,6 +34,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,11 +42,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HFace.cs" />
-    <Compile Include="HRender.cs" />
+    <Compile Include="HFaceCollider.cs" />
+    <Compile Include="HPerspectiveCamera.cs" />
     <Compile Include="HShaders.cs" />
-    <Compile Include="HSphere.cs" />
+    <Compile Include="HSphereCollider.cs" />
+    <Compile Include="HTracer.cs" />
+    <Compile Include="ICamera.cs" />
     <Compile Include="ICollider.cs" />
+    <Compile Include="ILightSource.cs" />
+    <Compile Include="HPointLightSource.cs" />
+    <Compile Include="HLightSchemes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -53,6 +59,9 @@
       <Project>{b717fa4b-c3c4-449f-9f4e-3108eb87a466}</Project>
       <Name>HiMath</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HiTracerClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -3,9 +3,9 @@ using HiMath;
 
 namespace HiTracer
 {
-    public class HFace : ICollider
+    public class HFaceCollider : ICollider
     {
-        public HFace(Point3D a, Point3D b, Point3D c, HShaders.Shader shader)
+        public HFaceCollider(Point3D a, Point3D b, Point3D c, HShaders.Shader shader)
         {
             A = a;
             B = b;
@@ -15,7 +15,7 @@ namespace HiTracer
             ApplyedTranformation = new Matrix3D();
         }
 
-        public HFace(Point3D a, Point3D b, Point3D c, HShaders.Shader shader, Matrix3D applyedTransforation)
+        public HFaceCollider(Point3D a, Point3D b, Point3D c, HShaders.Shader shader, Matrix3D applyedTransforation)
         {
             A = a;
             B = b;
@@ -62,17 +62,22 @@ namespace HiTracer
 
         public Vector3D CollisionNormal(HRay ray)
         {
-            return Vector3D.CrossProduct(A - B, C - B);
+            Vector3D tmp = Vector3D.CrossProduct(A - B, C - B);
+
+            if (Vector3D.AngleBetween(tmp, ray.Direction) < 90)
+                tmp = -tmp;
+
+            return tmp;
         }
 
         public ICollider Transform(Matrix3D matrix)
         {
-            return new HFace(
+            return new HFaceCollider(
                 A*matrix,
                 B*matrix,
                 C*matrix,
                 Shader,
-                ApplyedTranformation * matrix
+                ApplyedTranformation*matrix
                 );
         }
 

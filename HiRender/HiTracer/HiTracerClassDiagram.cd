@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="HiTracer.HFaceCollider" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAQAAAAgAAAAAIAAQAAQAAEAAAAAAAoAEAAAA=</HashCode>
+      <FileName>HFaceCollider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.179" Collapsed="true" />
+  </Class>
+  <Class Name="HiTracer.HLightSchemes" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>HLightSchemes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HiTracer.HPerspectiveCamera" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQBAAIAAAAAAAACAAQAgAEAAAAAEAAAIA=</HashCode>
+      <FileName>HPerspectiveCamera.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HiTracer.HPointLightSource" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAQgAAAgAAAAAABAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>HPointLightSource.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HiTracer.HShaders" Collapsed="true">
+    <Position X="3.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAACAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>HShaders.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HiTracer.HSphereCollider" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAIAAAAQAAAAgAAAAAIAAQAAQAAEAAAAAAAAAAIAAA=</HashCode>
+      <FileName>HSphereCollider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HiTracer.HTracer" Collapsed="true">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="HiTracer.HTracer.TraseRayFunction" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>HTracer.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>QAACAAAAAEAAAAQAAAAAAAAIAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>HTracer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="HiTracer.ICamera" Collapsed="true">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAIAAAAAAAAAAAAAgAEAAAAAEAAAIA=</HashCode>
+      <FileName>ICamera.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="HiTracer.ICollider" Collapsed="true">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAQAAAAgAAAAAIAAQAAQAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ICollider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="HiTracer.ILightSource" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAQAAAAAAAAAAABAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>ILightSource.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

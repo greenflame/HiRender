@@ -4,9 +4,9 @@ using HiMath;
 
 namespace HiTracer
 {
-    public class HSphere : ICollider
+    public class HSphereCollider : ICollider
     {
-        public HSphere(Point3D center, double radius, HShaders.Shader shader)
+        public HSphereCollider(Point3D center, double radius, HShaders.Shader shader)
         {
             Center = center;
             Radius = radius;
@@ -16,7 +16,7 @@ namespace HiTracer
             ApplyedTranformation = new Matrix3D();
         }
 
-        public HSphere(Point3D center, double radius, HShaders.Shader shader, Matrix3D applyedTransformation)
+        public HSphereCollider(Point3D center, double radius, HShaders.Shader shader, Matrix3D applyedTransformation)
         {
             Center = center;
             Radius = radius;
@@ -57,7 +57,7 @@ namespace HiTracer
 
         public ICollider Transform(Matrix3D matrix)
         {
-            return new HSphere(Center * matrix, Radius, Shader, ApplyedTranformation * matrix);
+            return new HSphereCollider(Center * matrix, Radius, Shader, ApplyedTranformation * matrix);
         }
 
         public Matrix3D ApplyedTranformation { get; private set; }

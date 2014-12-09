@@ -4,12 +4,6 @@ namespace HiMath
 {
     public class HGeometry
     {
-        //public static bool IntersectSphereLine(Point3D l0, Point3D l1, Point3D sphereCenter, double sphereRadius,
-        //    out Point3D result1, out Point3D result2)
-        //{
-            
-        //}
-
         public static bool IsPointOnRayExcludeSource(HRay ray, Point3D p)
         {
             return IsPointOnRayExcludeSource(ray.Source, ray.Direction, p);

@@ -42,7 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HPrimitives.cs" />
-    <Compile Include="HScene.cs" />
+    <Compile Include="HtScene.cs" />
     <Compile Include="HModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

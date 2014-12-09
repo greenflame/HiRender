@@ -5,13 +5,13 @@ using HiTracer;
 
 namespace HiScene
 {
-    public class HScene
+    public class HtScene
     {
         private readonly List<HModel> _models;
 
         public Matrix3D TransformationMatrix;
 
-        public HScene()
+        public HtScene()
         {
             _models = new List<HModel>();
             TransformationMatrix = new Matrix3D();

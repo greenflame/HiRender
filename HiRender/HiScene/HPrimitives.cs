@@ -8,9 +8,9 @@ namespace HiScene
         public static HModel PlaneXy(HShaders.Shader shader, double size)
         {
             var plane = new HModel();
-            plane.Colliders.Add(new HFace(new Point3D(1*size, 1*size, 0), new Point3D(-1*size, 1*size, 0),
+            plane.Colliders.Add(new HFaceCollider(new Point3D(1*size, 1*size, 0), new Point3D(-1*size, 1*size, 0),
                 new Point3D(-1*size, -1*size, 0), shader));
-            plane.Colliders.Add(new HFace(new Point3D(1*size, 1*size, 0), new Point3D(1*size, -1*size, 0),
+            plane.Colliders.Add(new HFaceCollider(new Point3D(1*size, 1*size, 0), new Point3D(1*size, -1*size, 0),
                 new Point3D(-1*size, -1*size, 0), shader));
             return plane;
         }
